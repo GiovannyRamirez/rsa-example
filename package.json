@@ -1,0 +1,11 @@
+{
+  "name": "rsa-example",
+  "version": "1.0.0",
+  "description": "rsa-example",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "encrypt-rsa": "^2.1.2"
+  }
+}
