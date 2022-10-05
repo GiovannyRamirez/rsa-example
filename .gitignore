@@ -2,5 +2,9 @@
 package-lock.json
 
 private-key
+llavePrivada.pem
 public-key
+llavePublica.pem
 cyphered-message.txt
+cifrado.txt
+Descifrado.txt
