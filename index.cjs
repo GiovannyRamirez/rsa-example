@@ -32,7 +32,7 @@ const getKeys = () => {
 
 const { privateKey, publicKey } = getKeys();
 
-const pathMessage = path.join(__dirname, "./mensaje.txt");
+const pathMessage = path.join(__dirname, "./message.txt");
 const inputText = fs.readFileSync(pathMessage, { encoding: "utf8" });
 
 const encryptedText = nodeRSA.encryptStringWithRsaPublicKey({ 
@@ -41,7 +41,7 @@ const encryptedText = nodeRSA.encryptStringWithRsaPublicKey({
 });
 
 console.log({ encryptedText });
-fs.writeFileSync("./mensaje-cifrado", encryptedText);
+fs.writeFileSync("./cyphered-message", encryptedText);
 
 const decryptedText = nodeRSA.decryptStringWithRsaPrivateKey({ 
   text: encryptedText, 

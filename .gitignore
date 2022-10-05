@@ -3,4 +3,4 @@ package-lock.json
 
 private-key
 public-key
-mensaje-cifrado
+cyphered-message
