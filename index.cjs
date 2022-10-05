@@ -41,7 +41,7 @@ const encryptedText = nodeRSA.encryptStringWithRsaPublicKey({
 });
 
 console.log({ encryptedText });
-fs.writeFileSync("./cyphered-message", encryptedText);
+fs.writeFileSync("./cyphered-message.txt", encryptedText);
 
 const decryptedText = nodeRSA.decryptStringWithRsaPrivateKey({ 
   text: encryptedText, 
